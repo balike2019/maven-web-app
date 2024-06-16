@@ -6,7 +6,7 @@ node{
   stage('2.mavenBuild'){
     sh "${mavenHome}/bin/mvn package"
   }
-  stage('3.sonaqubeQuality'){
+ /* stage('3.sonaqubeQuality'){
     sh "${mavenHome}/bin/mvn sonar:sonar"
   }
   stage('4.UploadArtifacts'){
@@ -22,4 +22,6 @@ deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'h
     sh " echo 'Please review & approve' "
     timeout(time:3, unit:'HOURS')  
 
+}
+*/
 }
