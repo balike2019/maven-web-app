@@ -12,3 +12,4 @@ pipeline{
          git 'https://github.com/balike2019/maven-web-app'
       }
     }
+}
